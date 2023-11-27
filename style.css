@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,800;1,200;1,300;1,400;1,600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: black;
+}
+
+h1 {
+    color: white;
+    font-weight: 400;
+}
+
+p {
+    color: white;
+    font-weight: 200;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    padding: 0 2rem;
+    position: relative;
+}
+
+/* NAV */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    height: 16vh;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+}
+
+h1 span {
+    display: block;
+    height: 5px;
+    background-color: orangered;
+    margin-bottom: 5px;
+    transition: width 1s ease-in-out;
+}
+
+h1 span:first-child {
+    width: 0;
+}
+
+h1 span:nth-child(2) {
+    width: 0;
+}
+
+/* .logo span {
+    display: block;
+    background: orangered;
+    width: 100%;
+    height: 5px;
+    margin-bottom: 5px;
+    animation: span-animation1 2s ease-in-out;
+}
+
+.logo span:nth-child(even) {
+    display: block;
+    background: orangered;
+    width: 50%;
+    height: 5px;
+    animation: span-animation2 2s ease-in-out;
+} */
+
+/* @keyframes span-animation1 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes span-animation2 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+} */
+
+ul {
+    display: flex;
+    column-gap: 4rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+ul li a:hover {
+    text-decoration: underline orangered;
+    text-underline-offset: .7rem;
+}
+
+/* HOME */
+
+#home {
+    flex-direction: column;
+}
+
+.home-info {
+    display: flex;
+    align-items: center;
+}
+
+.home-about {
+    width: 40%;
+    line-height: 1.5;
+}
+
+.home-about h1 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+}
+
+/* this feature allows you to edit specific parts of an element, pseudo-element */
+.home-about h1::first-letter { 
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.image {
+    width: 60%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* HOME BUTTONS */
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 1rem;
+    padding-top: 1.5rem;
+    width: 100%;
+}
+
+button {
+    width: 50%;
+    height: 2.1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.fa-brands {
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+#fbButton {
+    background: linear-gradient(to right, #0165E1, #17A9FD);
+}
+
+#igButton {
+    background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
+}
+
+/* ARROW ICON */
+
+.arrow {
+    position: absolute;
+    cursor: pointer;
+    font-size: 2.5rem;
+    right: 2rem;
+    bottom: 2rem;
+}
+
+/* ABOUT ME */
+
+.about-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-image {
+    width: 30%;
+    height: 60%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-info {
+    width: 40%;
+}
+
+.about-info h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    width: fit-content;
+}
+
+/* BLOGS */
+
+#blogs {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 3rem;
+}
+
+#blogs h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.blogs-container {
+    width: 100%;
+    height: 50vh;
+}
+
+.blogs-container {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.subscribe {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+#subcribeBtn {
+    background: linear-gradient(to right, #CD201F, rgb(218, 67, 67));
+    color: white;
+    width: 50%;
+}
+
+.fa-youtube {
+    margin-left: 0.8rem;
+}
+
+/* CONTACTS */
+
+#contacts {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5rem;
+}
+
+.contact-description {
+    margin-top: 4rem;
+    width: 50%;
+    text-align: center;
+}
+
+.contact-description h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.contact-infos {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50%;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info .fa-solid {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+/* FOOTER */
+
+footer {
+    height: 26vh;
+    background: linear-gradient(rgba(40, 40, 43, 0.8), rgba(40, 40, 43, 0.8));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
