@@ -274,7 +274,7 @@ button:hover {
     column-gap: 2rem;
 }
 
-#subcribeBtn {
+#subscribeBtn {
     background: linear-gradient(to right, #CD201F, rgb(218, 67, 67));
     color: white;
     width: 50%;
