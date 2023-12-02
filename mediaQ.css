@@ -429,3 +429,34 @@
     }
     
 }
+
+@media screen and (max-height: 300px) {
+
+    section {
+        height: 250vh;
+    }
+
+    .blogs-container {
+        height: 100vh;
+    }
+
+    footer {
+        height: 35vh;
+    }
+    
+}
+
+@media screen and (max-height: 200px) {
+
+    section {
+        height: 230vh;
+    }
+
+    .blogs-container {
+        height: 100vh;
+    }
+    
+    footer {
+        height: 35vh;
+    }
+}
