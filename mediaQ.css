@@ -421,7 +421,7 @@
 @media screen and (max-height: 400px) {
 
     section {
-        height: 180vh;
+        height: 150vh;
     }
 
     .blogs-container {
@@ -433,7 +433,7 @@
 @media screen and (max-height: 300px) {
 
     section {
-        height: 250vh;
+        height: 200vh;
     }
 
     .blogs-container {
@@ -444,19 +444,4 @@
         height: 35vh;
     }
     
-}
-
-@media screen and (max-height: 200px) {
-
-    section {
-        height: 230vh;
-    }
-
-    .blogs-container {
-        height: 100vh;
-    }
-    
-    footer {
-        height: 35vh;
-    }
 }
