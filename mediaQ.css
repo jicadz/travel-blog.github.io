@@ -405,3 +405,27 @@
     }
     
 }
+
+@media screen and (max-height: 500px) {
+
+    section {
+        height: 150vh;
+    }
+
+    .blogs-container {
+        height: 100vh;
+    }
+    
+}
+
+@media screen and (max-height: 400px) {
+
+    section {
+        height: 180vh;
+    }
+
+    .blogs-container {
+        height: 100vh;
+    }
+    
+}
